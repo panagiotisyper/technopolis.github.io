@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="cardstyle.css">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: black;
+    color: #f2f2f2;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+.column.side1{
+    width: 25%;
+    background-image: url(left.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1080px;
+    width: 25%;
+}
+    
+.column.side2{
+    width: 25%;
+    background-image: url(right.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1080px;
+    width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+/* Style the footer */
+.footer {
+    background-color: black;
+    height: 250px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+    
+    .footer p{
+        font-family: sans-serif;
+    }
+    
+    h1{
+        font-family: sans-serif;
+        font-size: 40px;
+        text-align: center;
+    }
+    
+</style>
+</head>
+<body>
+
+    <div class="header">
+      <h1>Header</h1>
+      <p>Resize the browser window to see the responsive effect.</p>
+    </div>
+
+    <div class="topnav">
+      <a href="main.html">NEWS</a>
+      <a href="bestseller.html">BEST SELLER</a>
+      <a href="giveaways.html">GEVEAWAYS</a>
+    </div>
+
+    <div class="row">
+
+        <div class="column side1"></div>
+
+        <div class="column middle">
+            
+            <h1>~BEST SELLERS~</h1>
+
+            <ul>
+            
+            <!-- !!--!! THIS IS A NEW CARD !!--!! -->
+            
+            <div class="card">
+                  <img src="blackops4.jpg" alt="Avatar" style="width:100%">
+              <div class="container">
+                <button class="buy"><a href="#" style="text-decoration: none; color: white">BUY</a></button>
+              </div>
+            </div>
+            
+            <!-- !!--!! THIS IS THE END OF A NEW CARD !!--!! -->
+            
+            <!-- !!--!! THIS IS A NEW CARD !!--!! -->
+            
+            <div class="card">
+              <img src="Football%20Manager%202019.jpg" alt="Avatar" style="width:100%">
+              <div class="container">
+                <button class="buy"><a href="#" style="text-decoration: none; color: white">BUY</a></button>
+              </div>
+            </div>
+            
+            <!-- !!--!! THIS IS THE END OF A NEW CARD !!--!! -->
+            
+            <!-- !!--!! THIS IS A NEW CARD !!--!! -->
+            
+            <div class="card">
+              <img src="Far%20Cry%205.jpg" alt="Avatar" style="width:100%">
+              <div class="container">
+                <button class="buy"><a href="#" style="text-decoration: none; color: white">BUY</a></button>
+              </div>
+            </div>
+            
+            <!-- !!--!! THIS IS THE END OF A NEW CARD !!--!! -->
+            
+            <!-- !!--!! THIS IS A NEW CARD !!--!! -->
+            
+            <div class="card">
+              <img src="Assassin's%20Creed%20Odyssey.jpg" alt="Avatar" style="width:100%">
+              <div class="container">
+                <button class="buy"><a href="#" style="text-decoration: none; color: white">BUY</a></button>
+              </div>
+            </div>
+            
+            <!-- !!--!! THIS IS THE END OF A NEW CARD !!--!! -->
+            
+            <!-- !!--!! THIS IS A NEW CARD !!--!! -->
+            
+            <div class="card">
+              <img src="csgo.jpg" alt="Avatar" style="width:100%">
+              <div class="container">
+                <button class="buy"><a href="#" style="text-decoration: none; color: white">BUY</a></button>
+              </div>
+            </div>
+            
+            <!-- !!--!! THIS IS THE END OF A NEW CARD !!--!! -->
+            
+            <!-- !!--!! THIS IS A NEW CARD !!--!! -->
+            
+            <div class="card">
+              <img src="pubg.jpg" alt="Avatar" style="width:100%">
+              <div class="container">
+                <button class="buy"><a href="#" style="text-decoration: none; color: white">BUY</a></button>
+              </div>
+            </div>
+            
+            <!-- !!--!! THIS IS THE END OF A NEW CARD !!--!! -->
+            
+            <!-- !!--!! THIS IS A NEW CARD !!--!! -->
+            
+            <div class="card">
+              <img src="FIFA%2019.jpg" alt="Avatar" style="width:100%">
+              <div class="container">
+                <button class="buy"><a href="#" style="text-decoration: none; color: white">BUY</a></button>
+              </div>
+            </div>
+            
+            <!-- !!--!! THIS IS THE END OF A NEW CARD !!--!! -->
+            
+            <!-- !!--!! THIS IS A NEW CARD !!--!! -->
+            
+            <div class="card">
+              <img src="Battlefield%205.jpg" alt="Avatar" style="width:100%">
+              <div class="container">
+                <button class="buy"><a href="#" style="text-decoration: none; color: white">BUY</a></button>
+              </div>
+            </div>
+            
+            <!-- !!--!! THIS IS THE END OF A NEW CARD !!--!! -->
+            
+            <!-- !!--!! THIS IS A NEW CARD !!--!! -->
+            
+            <div class="card">
+              <img src="Call%20of%20Duty%20World%20War%20II.jpg" alt="Avatar" style="width:100%">
+              <div class="container">
+                <button class="buy"><a href="#" style="text-decoration: none; color: white">BUY</a></button>
+              </div>
+            </div>
+            
+            <!-- !!--!! THIS IS THE END OF A NEW CARD !!--!! -->
+            
+            <!-- !!--!! THIS IS A NEW CARD !!--!! -->
+            
+            <div class="card">
+              <img src="Shadow%20of%20the%20Tomb%20Raider.jpg" alt="Avatar" style="width:100%">
+              <div class="container">
+                <button class="buy"><a href="#" style="text-decoration: none; color: white">BUY</a></button>
+              </div>
+            </div>
+            
+            <!-- !!--!! THIS IS THE END OF A NEW CARD !!--!! -->
+            
+            </ul>
+            
+            <!-- !!--!! THIS IS THE END OF A NEW CARD !!--!! -->
+            
+        </div>
+
+        <div class="column side2"></div>
+
+    </div>
+
+    <div class="footer">
+        <p>INFO</p>
+        <h3></h3>
+    </div>
+  
+</body>
+</html>

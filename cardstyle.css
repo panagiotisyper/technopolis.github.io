@@ -1,0 +1,85 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: 0.3s;
+    width: 18%;
+    float: left;
+    margin: 8px 4px;
+    background-color: black;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.container button {
+    background-color: gray; 
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-left: 27px;
+    border-radius: 4px;
+}
+
+.buy {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.buy:hover {
+    background-color: #555555;
+}
+
+.pagination {
+    display: inline-block;
+    font-family: monospace;
+    font-size: 25px;
+    margin-left: 320px;
+    margin-top: 60px;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
